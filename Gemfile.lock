@@ -1,0 +1,12 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    minitest (5.6.0)
+    openssl (1.0.0.beta)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  minitest
+  openssl
