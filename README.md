@@ -7,7 +7,13 @@ Pre-requisites:
 - git installed
 - bash or zsh shell available
 
-Steps to setup environment in Linux or OS X and run tests. Commands are all run and tested in bash and zsh.
+Assumptions:
+- The nearest station request returns a default twenty results, and allows a larger batch to be requested or offsets given to get all entries (n of m). The test assumes that the desired station comes back in first batch instead of checking for station being returned and making further batch requests until number of stations are exhausted. 
+- The tests assume the data we are testing is known and deterministic. Such as the ID is not changing between runs
+- The tests also assume knowledge of JSON format. If this is variable or unknown then more logic would need to be in place to handle that.
+ 
+
+##Steps to setup environment in Linux or OS X and run tests. Commands are all run and tested in bash and zsh.
 
 1) Install Ruby. The instructions below are for RVM, but if you have your own Ruby then that can be used
 
