@@ -7,7 +7,7 @@ Pre-requisites:
 - git installed
 - bash or zsh shell available
 
-Steps to setup environment in Linux or OS X. Commands are all run and tested in bash and zsh.
+Steps to setup environment in Linux or OS X and run tests. Commands are all run and tested in bash and zsh.
 
 1) Install Ruby. The instructions below are for RVM, but if you have your own Ruby then that can be used
 
@@ -25,4 +25,12 @@ Steps to setup environment in Linux or OS X. Commands are all run and tested in 
     cd <a directory of your choice to run these in>
     git clone https://github.com/mmorast/api_gov_tests
     
-4)
+4) Run bundler to install gems
+    
+    bundle install
+    
+5) Run tests 
+
+    ruby alt_fuel_station_test.rb
+    
+At this point the tests will have run and returned results
